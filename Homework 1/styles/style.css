@@ -1,0 +1,161 @@
+body, p, h1, h2{
+    padding: 0;
+    margin: 0;
+    color: white;
+    
+   
+}
+
+body{
+    background: linear-gradient(to right, #373b44, #4286f4);
+    
+}
+
+img{
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px black;
+}
+
+button{
+    box-shadow: 3px 3px 3px 3px black;
+}
+
+
+.topsection {
+    background: lawngreen;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content:space-around;
+    padding: 20px 0px;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 3px 3px black;
+   
+  
+
+}
+
+.logo{
+    cursor: pointer;
+    
+}
+
+
+
+
+.nav a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color: black; 
+    
+    
+      
+
+}
+
+
+
+
+.nav a:hover{
+    opacity: 0.5;
+}
+.btn1{
+    border-radius: 30px;
+   
+}
+
+.btn1-{
+    border-radius: 30px;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+
+
+
+
+.prodsection{
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    width: 100%;
+    background-image: url(/images/img3.jpg);
+    background-position: center center;
+    box-shadow: 3px 3px 3px 3px black;
+
+}
+
+.prod{
+    width: 45%;
+    color: white;
+    padding-top: 30px;
+    
+
+}
+
+.prod button{
+    border-radius: 30px;
+    padding: 5px;
+}
+
+
+
+
+
+.picsect{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.picsect p, h2{
+    text-align: center;
+}
+
+
+
+.pic{
+    width: 100%;
+    height: 100%
+
+}
+
+
+
+.img-text{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+    justify-content: space-evenly;
+    margin-top: 140px;
+    
+    
+}
+
+.img, .text{
+    width: 40%;
+    height: 60%;
+}
+
+
+
+.img-text-rev{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 300px;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    
+}
+
+.img, .text{
+    width: 40%;
+    height: 60%;
+    
+}
+

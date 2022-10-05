@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7 task 2</title>
+</head>
+
+<body>
+    <h2>10 параграфа с числата от 1 до 10 изцяло с JavaScript</h2>
+
+    <p id="digits"></p>
+
+    <script>
+        const digits = ["<p>1</p>", "<p>2</p>", "<p>3</p>", "<p>4</p>", "<p>5</p>", "<p>6</p>", "<p>7</p>", "<p>8</p>", "<p>9</p>", "<p>10</p>"];
+
+        let text = "";
+        for (let i = 0; i < digits.length; i++) {
+            text += digits[i];
+        }
+
+        document.querySelector("#digits").innerHTML = text;
+    </script>
+</body>
+
+</html>

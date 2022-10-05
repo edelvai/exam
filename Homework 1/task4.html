@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homework 1 Task 4</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            h1, h2, h3 {
+                padding: 0;
+                margin: 0;
+            }
+
+            .box {
+                height: 200px;
+                background: silver;
+                width: 30%;
+                margin-bottom: 10px;
+
+            }
+
+            .container {
+                font-size: 25px;
+                padding: 20px;
+                display: flex;
+                justify-content: space-evenly;
+
+
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px) {
+                .container {
+
+
+                    flex-wrap: wrap;
+                }
+
+                .w100 {
+                    width: 100%;
+
+
+                }
+
+                .w50 {
+                    width: 48%;
+                    
+                }
+
+            }
+
+            @media(max-width: 767px) {
+                .w100m {
+                    width: 100%;
+
+                }
+
+                .container {
+
+                    flex-wrap: wrap;
+
+                }
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box w100 w100m">
+                <h1>This is Title</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. A accusamus est in quibusdam nihil impedit veritatis
+                </p>
+
+            </div>
+            <div class="box w50 w100m">
+                <h2>This is Title</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. A accusamus est in quibusdam nihil impedit veritatis
+                </p>
+            </div>
+            <div class="box w50 w100m">
+                <h6>This is Title</h6>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. A accusamus est in quibusdam nihil impedit veritatis
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

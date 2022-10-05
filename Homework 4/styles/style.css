@@ -1,0 +1,951 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Montserrat:wght@100;200&family=Pinyon+Script&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Montserrat:wght@100;200&family=Philosopher&family=Pinyon+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #c0aa61;
+     
+}
+
+/*TOP START*/
+.top{
+    padding-top: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(22,1fr);
+    grid-auto-rows:2rem;
+    gap: 0.8rem;
+    background-color: #eee;
+    padding-bottom: 0.6rem;
+    position: fixed;
+}
+
+.logo{
+    cursor: pointer;
+    letter-spacing: 0.8rem;
+    grid-column: 1/2;
+    grid-row: 1;
+    color: var(--main-color);
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.menu{
+        display: grid;
+        grid-column: 2/7;
+        grid-row: 1;
+        font-family: 'Philosopher',cursive;
+        
+
+        
+    
+    
+}
+.menu ul, .nav-products ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style-type: none;
+    
+    
+}
+
+.menu ul li{
+
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    
+ }
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover{
+    color: var(--main-color)
+}
+
+.i-pane{
+        grid-column: 11/23;
+        grid-row: 1;
+        text-align: left;
+        
+    }
+
+    .icons{
+        display: flex;
+        padding-right:1rem ;
+        justify-content:flex-end;
+        flex-direction: row;
+        font-size: 50px;
+        letter-spacing: 30px;
+        
+    }
+    
+
+.vl{
+    border-left: 1px solid black;
+}
+
+/*TOP END*/
+.header{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem;
+    background: url(/images/h-cover.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header h1{
+    font-family: 'Pinyon Script', cursive;
+    color: var(--main-color);
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+.header h3{
+    font-family: 'Philosopher',cursive;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 50px;
+}
+
+.header button{
+    padding: 12px;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--main-color);
+    border: unset;
+    font-size: 1.5rem;
+    
+}
+
+.main{ 
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    grid-auto-rows: 0.7rem;
+    gap: 0.8rem;
+
+}
+.box{
+    border: 2px solid black;
+
+}
+.box1{
+    grid-row: 3/15;
+    grid-column: 2/10;
+    background-image: url(/images/chair.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.box1-items{
+    margin-top: 10rem;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.box1-items h3,.box4-items h3,.box5-items h3, .box6-items h3{
+    font-family: 'Pinyon Script', cursive;
+    color: var(--main-color);
+    letter-spacing: 0.4rem;
+}
+.box1-items span, .box5-items span,.box6-items span{
+    font-family: 'Philosopher',cursive;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+}
+
+.box2{
+    grid-row: 3/10;
+    grid-column: 10/15;
+    background-image: url(/images/3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.box3{
+    grid-row: 3/10;
+    grid-column: 15/21;
+    background-image: url(/images/4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.box4{
+    grid-row: 10/20;
+    grid-column: 10/21;
+    background-image: url(/images/5.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.box4-items{
+    width: 40%;
+    border: 1px dotted grey;
+    margin: 3rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+.number{
+    color: var(--main-color);
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    font-family:'Philosopher';
+    font-weight: 700;
+}
+.percent{
+    font-size: 3rem;
+    color:grey;
+    font-family:'Philosopher';
+    font-weight: 700;
+}
+
+.box5{
+    grid-row: 20/26;
+    grid-column: 10/21;
+    background-image: url(/images/6.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.box5-items{
+    margin-top: 2rem;
+    text-align: left;
+}
+.box6{
+    grid-row: 15/20;
+    grid-column: 2/10;
+    background-image: url(/images/green-em.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box6-items{
+    margin-top: 3rem;
+    text-align: right;
+}
+.box7{
+    grid-row: 20/26;
+    grid-column:2/6;
+    background-image: url(/images/7.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.box8{
+    grid-row: 20/26;
+    grid-column: 6/10;
+    background-image: url(/images/8.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.h-new-products {
+    text-align: center;
+    font-family: 'Philosopher',cursive;
+    padding: 2rem;
+    font-size: 45px;
+}
+.h-new-products h2{
+    font-family: 'Pinyon Script', cursive;
+    color: var(--main-color);
+}
+.nav-products ul{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    list-style-type: none;
+}
+.nav-products ul li{
+    margin-left: 6rem;
+}
+
+.nav-products a:hover{
+    color: var(--main-color);
+}
+
+.new-prod{
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-auto-rows: 1rem;
+    gap: 4rem;
+    padding-top: 2rem ;  
+
+}
+
+.prod{
+    border: 1px solid black;
+    
+
+}
+.prod1{
+    grid-column: 2/6 ;
+    grid-row: 1/5;
+    background-image: url(/images/9.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+.prod2{
+    grid-column: 6/10;
+    grid-row: 1/5;
+    background-image: url(/images/10.jpg);
+    background-size: cover;
+    background-position: center
+   
+}
+.prod3{
+    grid-column: 10/14;
+    grid-row: 1/5;
+    background-image: url(/images/11.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.prod4{
+    grid-column: 14/18;
+    grid-row: 1/5;
+    background-image: url(/images/12.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.prod5{
+    grid-column: 2/6 ;
+    grid-row: 5/9;
+    background-image: url(/images/13.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.prod6{
+    grid-column: 6/10;
+    grid-row: 5/9;
+    background-image: url(/images/14.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.prod7{
+    grid-column: 10/14;
+    grid-row: 5/9;
+    background-image: url(/images/15.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.prod8{
+    grid-column: 14/18;
+    grid-row: 5/9;
+    background-image: url(/images/16.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.text{
+    margin-top: 16rem;
+    color: silver;
+    font-family: 'Philosopher',cursive;
+}
+
+.icons-container{
+    margin-top: 16rem;
+}
+
+
+.review{
+    display:flex;
+    margin-top: 0.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.black{
+    color: black;
+}
+
+.price{
+    padding-right: 0.5rem;
+    color: var(--main-color);
+    font-family: 'Philosopher', cursive;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    
+}
+
+.icons-container{
+    display: flex;
+    align-items: center;
+   
+
+}
+
+.icons-container i { 
+    border: 1px solid silver;
+    padding: 12px;   
+    border-radius: 50%;
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+   
+}
+
+.gold{
+    color: white;
+    background-color:var(--main-color);
+}
+
+.btn-grid{
+    text-align: center;
+    margin-top: 6rem;
+}
+.btn-grid button{
+    border: 1px solid black;
+    background: white;
+    color: black;
+    font-family: 'Philosopher';
+    border-radius: 30px;
+    padding: 12px, 16px;
+    font-size: 2rem;
+}
+
+/*DEAL OF WEEK START*/
+
+.deals-container{
+    margin-top: 2rem;
+    display: grid;
+    grid-row:1/16 ;
+    grid-column: 1/23;
+    background-color: #eee;
+}
+
+.date-inside{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: 'Philospopher', cursive;
+
+}
+
+.bold{
+    font-weight: bold;
+    font-family:'Philosopher';
+    font-size: 2rem;
+}
+
+.left-side{
+    width: 50%;
+    text-align: center;
+    margin-top: 5rem;
+    padding-left: 2rem;
+}
+.left-side h3{
+    font-family: 'Pinyon Script', cursive;
+    color: var(--main-color);
+    font-size: 2rem;
+}
+.left-side span{
+    font-family:'Philosopher';
+    font-size: 2rem;
+
+}
+.left-side p{
+    color: silver;
+    text-align: center;
+}
+
+.goldie{
+    color: var(--main-color);
+}
+
+.silver{
+    color: gray;
+    font-family: 'Philospopher';
+    font-weight: 600;
+}
+
+.date1{
+    text-align: center;
+    display: flex;
+    padding: 3rem 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+    border: 1px solid silver;
+    border-radius: 50% ;
+}
+
+.date2{
+    text-align: center;
+    display: flex;
+    padding: 4rem 1rem ;
+    margin-right: 1rem;
+    flex-direction: column;
+    border: 1px solid silver;
+    border-radius: 50% ;
+}
+
+.date3{
+    text-align: center;
+    display: flex;
+    padding: 4rem 0.2rem ;
+    margin-right: 1rem;
+    flex-direction: column;
+    border: 1px solid silver;
+    border-radius: 40% ;
+}
+
+.date4{
+    text-align: center;
+    display: flex;
+    padding-top: 4rem ;
+    flex-direction: column;
+    border: 1px solid silver;
+    border-radius: 40% ;
+}
+
+.left-side button{
+    padding: 13px 23px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 2rem;
+    font-family: 'Philosopher', cursive;
+}
+
+
+.right-side{
+    width: 30rem;
+    height: 60%;
+    margin-right: 4rem;
+    text-align: center;
+    margin-top: 6rem;
+    grid-column: 24/27;
+    border: 2px solid black;
+    background-image: url(/images/17.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+   
+}
+
+/*DEAL OF WEEK END*/
+
+/*BEST SELLERS START*/
+
+.best-sellers-heading{
+    display: grid;
+    grid-row: 77;
+    grid-column: 1/23;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.best-sellers-heading h3{
+    font-family: 'Pinyon Script', cursive;
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+
+
+.best-sellers-container{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows:1rem;
+    gap: 2rem;
+
+    
+}
+.best{
+    border: 1px solid black;
+}
+.best1{
+    grid-row: 1/13;
+    grid-column: 2/6;
+    background-image: url(/images/18.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.best2{
+    grid-row: 1/7;
+    grid-column: 6/8;
+    background-image: url(/images/19.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.best3{
+   grid-row: 1/7;
+   grid-column: 8/10;
+   background-image: url(/images/20.jpg);
+   background-size: cover;
+   background-position: center center;
+}
+
+.best4{
+    grid-row: 7/13;
+    grid-column: 6/8;
+    background-image: url(/images/21.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.best5{
+    grid-row: 7/13;
+    grid-column: 8/10;
+    background-image: url(/images/22.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.bestbutton{
+   grid-row: 13/14;
+   grid-column: 1/11;
+   text-align: center;
+}
+
+.bestbutton button{
+    padding: 13px 23px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: 'Philosopher', cursive;
+}
+
+.bestbutton button:hover{
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+/*BEST SELLERS END*/
+
+/*LAST BLOG START*/
+
+.last-bologs-container{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows:2rem;
+    gap: 2rem;
+}
+
+.silver-container{
+    grid-row: 1/2;
+    grid-column: 1/11;
+    background: #eee;
+    min-height: 30rem;
+}
+
+.blog-heading{
+    grid-row: 1/2;
+    padding-top: 3rem;
+    text-align: center;
+    font-family: 'Pinyon Script', cursive;
+}
+
+
+.blog1-container{
+  grid-row: 4/5;
+  grid-column: 3/6;
+}
+.blog1{
+  padding-top: 1rem;
+  width: 50%;
+  display: block;
+  float: left;
+  background: #eee;
+}
+
+.text-blog{
+   text-align: center;
+}
+.img-blog{
+    width: 50%;
+    margin: 0 auto;
+    height: 80%;
+}
+
+.img-blog img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-blog h3{
+    font-family: 'Philosopher',cursive;
+    color: grey;
+    letter-spacing: 0.3rem;
+    margin:0.5rem 0;
+}
+
+.date-blog{
+    font-family: 'Philosopher', cursive;
+    font-size:0.7rem;
+    letter-spacing: 0.3rem;
+    color: silver;
+}
+
+.blog2{
+    padding-top: 2rem;
+    width: 50%;
+    display: block;
+    float: right;
+    background: #eee;
+  }
+  
+  .text-blog a{
+    color: gray;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+  }
+
+/*LAST BLOG END*/
+
+
+
+/*FOOTER START*/
+.footer-container{
+    font-family: 'Philosopher'cursive;
+    justify-content: space-evenly;
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+.col1f{
+    padding: 2rem;
+}
+
+.addres{
+    padding-left:2rem ;
+}
+
+.addres span{
+    color: gray;
+}
+
+.col2f{
+    padding: 2rem;
+   
+}
+
+.col2f ul {
+    list-style: none;
+}
+
+.col2f ul li{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.col2f a ,.col3f a,.col4f a{
+    text-decoration: none;
+    color: gray;
+}
+
+.col2f a:hover{
+    color: var(--main-color);
+}
+
+.col3f{
+    padding: 2rem;
+    float: left;
+}
+
+.col3f ul {
+    list-style: none;
+}
+
+.col3f ul li{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.col3f a{
+    text-decoration: none;
+}
+
+.col3f a:hover{
+    color: var(--main-color);
+}
+
+.col4f{
+    padding: 2rem;
+    float: left;
+}
+
+.navf4{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 0.4rem;
+    grid-auto-rows: 1rem;
+}
+
+.fb1{
+    border:1px dashed silver;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    padding: 10px;
+}
+
+.fb2{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 1/3;
+    grid-column: 3/5;
+    padding: 10px;
+}
+
+.fb3{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 1/3;
+    grid-column: 5/7;
+    padding: 10px;
+}
+
+.fb4{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 3/5;
+    grid-column: 1/4;
+    padding: 10px;
+}
+
+.fb5{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 3/5;
+    grid-column: 4/6;
+    padding: 10px;
+}
+
+.fb6{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 3/5;
+    grid-column: 6/8;
+    padding: 10px;
+}
+
+.fb7{
+    border:1px dashed silver;
+    grid-row: 5/7;
+    grid-column: 1/3;
+    text-align: center;
+    padding: 10px;
+}
+
+.fb8{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 5/7;
+    grid-column: 3/5;
+    padding: 10px;
+}
+
+.fb9{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 5/7;
+    grid-column: 5/7;
+    padding: 10px;
+}
+
+.fb1 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb2 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb3 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb4 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb5 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb6 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb7 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb8 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb9 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.sidenav ul li{
+    margin: 1rem;
+ }
+ 
+ .sidenav ul li a {
+     color: black;
+     font-size: 1rem;
+ }
+ 
+.navf{
+    display: flex;
+    font-family: 'Philosopher' cursive;
+    color: silver;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sidenav{
+    border-bottom: 1px solid #eee;
+   
+}
+
+.navf ul li a{
+    color: silver;
+}
+
+.navf ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+ .sidenav a:hover{
+     color: var(--main-color);
+ }
+ 
+ .copyright{
+    width: 100%;
+    color: gray;
+    text-align: center;
+    font-family: 'Philosopher' cursive;
+    letter-spacing: 0.1rem;
+    padding: 1rem 0;
+ }
+
+ .copyright a{
+    color: var(--main-color);
+ }
+/*FOOTER END*/

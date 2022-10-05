@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            left: 300px;
+            top: 100px;
+            height: 500px;
+            width: 600px;
+        }
+
+        .btn-holder {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .btn-holder button {
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            border: unset;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <img id='image' src="/images/img2.jpg">
+        <div class="btn-holder">
+            <button id="left" onclick="moveleft()">left</button>
+            <button class="right" onclick="moveright()">right</button> <br>
+            <button class="up" onclick="moveup()">up</button> <br>
+            <button class="down" onclick="movedown()">down</button>
+        </div>
+
+
+
+        <script>
+            function moveup() {
+                const img = document.getElementById('image');
+                img.style.top = `${img.offsetTop - 50}px`;
+            }
+
+            function movedown() {
+                const img = document.getElementById('image');
+                img.style.top = `${img.offsetTop + 50}px`;
+            }
+
+            function moveleft() {
+                const img = document.getElementById('image');
+                img.style.left = `${img.offsetLeft - 50}px`;
+            }
+
+            function moveright() {
+                const img = document.getElementById('image');
+                img.style.left = `${img.offsetLeft + 50}px`;
+            }
+
+        </script>
+    </body>
+
+</html>
